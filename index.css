@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    align-items: center;
+
+}
+body {
+   justify-content: center;
+   align-items: center;
+   color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
+   display:flex; 
+   flex-direction:column; 
+   justify-content:center;
+   min-height:100vh;
+}
+a {
+    text-decoration: none;
+    padding: 25px;
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    border-bottom: 1px solid white;
+    color: rgb(144, 137, 137);
+}
+
+.tw {
+    font-family: 'Anonymous Pro', monospace;
+    position: relative;
+    width: 11em;
+    border-right: 2px solid rgba(255,255,255,0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2.5rem;
+    animation: typewriter 4s steps(30) 1s 1 normal both, 
+               cursor 1s steps(40) infinite normal;
+}
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 11em;
+    }
+}
+
+@keyframes cursor {
+    from {
+        border-right-color: rgba(255 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+.container1 {
+    margin-top: 500px;
+}
+.container1 div {
+    width: 45%;
+}
+.container1 .autob h3{
+    border-bottom: 1px solid  rgb(209, 209, 98);
+}
+.container1 .autob h1,h4, p{
+    text-align: left;
+    margin-top: 15px;
+}
+.container1 .autob .bio {
+    width: 85%;
+}
+.container1 .autob p {
+    font-size: 1.1rem;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 20px 50px 30px 50px;
+    line-height: 28px;
+}
+.container1 .autob {
+    display: flex;
+    flex-direction:column;
+}
+p {
+    font-size: 25px;
+    margin-top: 60px;
+}
+nav {
+    margin-top: 50px;
+    text-align: center;
+    /* width: 80%; */
+    align-items: center;
+    
+}
+#container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+    padding: 1rem 80px;
+    width: 100%;
+
+}
+.skill-box {
+    padding: 1rem;
+    cursor: pointer;
+    color: #ddd;
+
+}
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.skill-title h4 {
+   margin: 0.5rem;
+
+}
+.skill-icon {
+    width: 85px;
+}
+.container1 p, #container2 p, .container4 p, .contact p {
+    font-size: 18px;
+    margin:auto;
+}
+.container1 {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    width: 90%;
+}
+.container1 .photo {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 48%;
+}
+.container1 .photo img{
+    border-radius: 50%;
+    width: 350px;
+    height: 320px;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    position: relative;
+    width: 90%;
+    /* flex-wrap: wrap; */
+}
+#container2 .interest {
+    position: relative;
+    width: 28%;
+    height: 350px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+#container2 .interest .content {
+    padding: 20px;
+    transition: 0.5s;
+    text-align: justify;
+    justify-content: inherit;
+    line-height: 1.6rem;
+
+}
+#container2 .interest .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1.5rem;
+    
+}
+#container2 .interest .content p {
+    color: rgb(173, 169, 169);
+    font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#container2 .interest .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: white;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.conatiner3 img {
+    width: 100px;
+    height: 100px;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.3rem;
+}
+li p {
+    font-size: 1rem;
+    padding: 15px 15px 15px 0;
+}
+.form {
+    text-align: center;
+    justify-content: center;
+
+}
+input {
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 30px;
+}
+h1 {
+    text-align: center;
+}
+.container4 {
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+    position: relative;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.container4:nth-child(2) {
+    width: 70%;
+}
+.container4 .card {
+    width: 25%;
+    height: 300px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.container4 .card .content {
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+    
+
+}
+.container4 .card .content h2 {
+    position: absolute;
+    top: -5px;
+    font-size: 3rem;
+    right: 28px;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.container4 .card .content h3 {
+    font-size: 1.3rem;
+    color: #fff;
+   padding: 10px;
+}
+
+.container4 .card .content p {
+    color: rgb(173, 169, 169);
+    font-weight: 300;
+    text-align: justify;
+
+}
+.container4 .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: white;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+footer {
+    margin-top: 20px;
+    margin-right: 5px;
+    width: 90%;
+}
+footer .contact {
+   float: right;
+   padding: 0 10px 10px 0;
+}
+footer .contact p {
+    padding: 3px;
+    margin-right: 10px;
+}
+  @media screen and (max-width: 800px) {
+    a{
+      display: block;
+    }
+    body {
+        width:inherit;
+    }
+    .container1, #container2, #container3, .container4 {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .container1, #container2, #container3, div {
+        display: inline-block;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .container4 p {
+        display: inline-block;
+    }
+    .tw {
+        font-size: 1.6rem;
+        text-align: center;
+        margin: auto;
+    }
+    .container1 .autob {
+        width: 500px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+    }
+    .container1 .skill-icon {
+        position: relative;
+        text-align: center;
+        transform: translateX(120px);
+    }
+    .container1 .bio .tw {
+        text-align: center;
+        padding: 5px;
+        align-items: center;
+    }
+    .container1 .photo {
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        /* margin: 0%; */
+        position: relative;
+    }
+    .bio h3 {
+        margin-top: 30px;
+        text-align: center;
+    }
+    #container2 .interest {
+        display: block;
+        width:80%;
+        margin: 70px auto;
+        padding: 10px;
+        position: relative;
+         box-shadow: transparent;
+        text-align: center;
+    }
+    #container2:nth-child(2) {
+        margin-top: 0;
+    }
+    /* footer {
+        width: 80%;
+        text-align: center;
+        margin-top:500px auto;
+    }
+    footer a, p{
+        display: inline-block;
+        margin-left: 30px;
+    } */
+    .container4 .content {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        padding: 40px;
+        
+    }
+    .container4 .card {
+        width: 60%;
+    }
+  }
+
+
+
+
+
+
+
+
+  
